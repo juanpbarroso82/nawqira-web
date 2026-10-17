@@ -38,10 +38,12 @@ CNAME                    Custom domain for GitHub Pages (nawqira.com)
 - Paid services and DNS changes need the product owner's approval.
 
 ## DNS (reference)
-- `nawqira.com` (IONOS): apex A/AAAA records to GitHub Pages, `www` CNAME to the GitHub
-  Pages user domain; HTTPS by GitHub Pages (Let's Encrypt).
-- `nawqira.es` (Cloudflare): proxied records + a Cloudflare redirect rule (301) to
-  `https://nawqira.com` keeping the path; HTTPS by Cloudflare.
+- `nawqira.com`: DNS managed in Cloudflare, records **DNS only** (grey cloud): apex A/AAAA to
+  GitHub Pages, `www` CNAME `juanpbarroso82.github.io`, plus the GitHub Pages
+  domain-verification TXT. HTTPS by GitHub Pages (Let's Encrypt), "Enforce HTTPS" on.
+- `nawqira.es`: registered at IONOS, DNS moved to Cloudflare (IONOS MX records kept);
+  proxied placeholder A records (192.0.2.1) for `@` and `www` + redirect rule (301) to
+  `https://nawqira.com` keeping path and query; HTTPS by Cloudflare.
 
 ## Status
 - 2026-10-17: phase-1 site prepared and committed locally; publication authorized by the
