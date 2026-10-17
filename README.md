@@ -49,3 +49,4 @@ CNAME                    Custom domain for GitHub Pages (nawqira.com)
 - 2026-10-17: phase-1 site prepared and committed locally; publication authorized by the
   product owner.
 - 2026-10-18: live at https://nawqira.com (HTTPS enforced; www and http redirect). nawqira.es and www.nawqira.es redirect (301, path + query kept) to https://nawqira.com, HTTPS by Cloudflare (checked 2026-10-18; IONOS MX kept).
+- 2026-10-18: Orienta AR policy v0.5.3 (controller Juan Pedro Barroso, effective 2026-10-18) and website privacy note (/privacy/) published; all links checked (200).
