@@ -45,4 +45,5 @@ CNAME                    Custom domain for GitHub Pages (nawqira.com)
 
 ## Status
 - 2026-10-17: phase-1 site prepared and committed locally; publication authorized by the
-  product owner. - 2026-10-18: live at https://nawqira.com (HTTPS enforced; www and http redirect). nawqira.es → Cloudflare redirect pending zone activation.
+  product owner.
+- 2026-10-18: live at https://nawqira.com (HTTPS enforced; www and http redirect). nawqira.es → Cloudflare redirect pending zone activation.
