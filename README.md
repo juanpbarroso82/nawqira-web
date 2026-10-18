@@ -79,3 +79,4 @@ store graphics (`assets/<appname>/`). Structured-data publisher = the privacy co
   product owner.
 - 2026-10-18: live at https://nawqira.com (HTTPS enforced; www and http redirect). nawqira.es and www.nawqira.es redirect (301, path + query kept) to https://nawqira.com, HTTPS by Cloudflare (checked 2026-10-18; IONOS MX kept).
 - 2026-10-18: Orienta AR policy v0.5.3 (controller Juan Pedro Barroso, effective 2026-10-18) and website privacy note (/privacy/) published; all links checked (200).
+- 2026-10-18: SEO + languages published (owner-approved): ES/EN pages with hreflang, descriptions, Open Graph, JSON-LD (publisher = privacy controller), robots.txt, sitemap.xml, website icon (proposal B), accessibility. Analytics prepared, not active; ads as invisible markers only. All URLs, assets, redirects and the 404 checked live. Search Console: owner verifying by DNS TXT; sitemap to submit after verification.
