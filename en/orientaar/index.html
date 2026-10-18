@@ -36,6 +36,7 @@
   "applicationCategory": "EducationalApplication",
   "inLanguage": ["es", "en"],
   "image": "https://nawqira.com/assets/orientaar/icon-192.png",
+  "screenshot": ["https://nawqira.com/assets/orientaar/shots/en-1-home-540.jpg", "https://nawqira.com/assets/orientaar/shots/en-2-compass-540.jpg", "https://nawqira.com/assets/orientaar/shots/en-3-academy-540.jpg", "https://nawqira.com/assets/orientaar/shots/en-4-exercise-540.jpg"],
   "featureList": ["Compass with a reading-quality indicator", "Map AR: orient your paper map with the camera", "Bearings between two points on a photo of the map", "Academy: courses, lessons, quizzes and exercises", "Works offline"],
   "publisher": {
     "@type": "Person",
@@ -47,7 +48,7 @@
 }
 </script>
 </head>
-<body>
+<body class="app-orientaar">
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header"><div class="wrap">
   <a class="brand" href="/en/">nawqira</a>
@@ -58,23 +59,37 @@
 </div></header>
 
 <main id="main" class="wrap">
-<div class="app-head">
+<section class="app-hero">
   <img src="/assets/orientaar/icon-192.png" width="96" height="96" alt="">
   <div>
     <h1>Orienta AR</h1>
-    <p class="muted">Educational orienteering app for Android</p>
+    <p class="tagline">Learn orienteering: compass, map with camera, bearings and academy.</p>
+    <p class="platform"><b>Android</b> · Spanish and English · Offline</p>
   </div>
-</div>
+</section>
+
+<ul class="facts" aria-label="Features of this version">
+  <li>Works offline</li><li>No accounts</li><li>No intrusive ads</li><li>No analytics</li>
+</ul>
+<!-- store-badge: Google Play badge only once the app is published (follow Google's badge guidelines) -->
+
+<h2>See the app</h2>
+<ul class="gallery" tabindex="0" aria-label="Orienta AR screenshots (scrollable)">
+  <li><figure><img loading="lazy" src="/assets/orientaar/shots/en-1-home-360.jpg" srcset="/assets/orientaar/shots/en-1-home-360.jpg 360w, /assets/orientaar/shots/en-1-home-540.jpg 540w" sizes="(max-width: 640px) 62vw, 180px" width="360" height="720" alt="Home screen with the four modes: Compass, Map AR, Bearings and Academy."><figcaption><b>Four modes</b>Compass, Map AR, Bearings and Academy.</figcaption></figure></li>
+  <li><figure><img loading="lazy" src="/assets/orientaar/shots/en-2-compass-360.jpg" srcset="/assets/orientaar/shots/en-2-compass-360.jpg 360w, /assets/orientaar/shots/en-2-compass-540.jpg 540w" sizes="(max-width: 640px) 62vw, 180px" width="360" height="720" alt="Compass reading 20° north with the “Stable reading” indicator."><figcaption><b>Compass</b>With a quality indicator: if the reading is unreliable, it says so.</figcaption></figure></li>
+  <li><figure><img loading="lazy" src="/assets/orientaar/shots/en-3-academy-360.jpg" srcset="/assets/orientaar/shots/en-3-academy-360.jpg 360w, /assets/orientaar/shots/en-3-academy-540.jpg 540w" sizes="(max-width: 640px) 62vw, 180px" width="360" height="720" alt="List of Academy courses with their progress."><figcaption><b>Academy</b>Six courses to learn from scratch.</figcaption></figure></li>
+  <li><figure><img loading="lazy" src="/assets/orientaar/shots/en-4-exercise-360.jpg" srcset="/assets/orientaar/shots/en-4-exercise-360.jpg 360w, /assets/orientaar/shots/en-4-exercise-540.jpg 540w" sizes="(max-width: 640px) 62vw, 180px" width="360" height="720" alt="Exercise: choose the cardinal point shown by an arrow on the compass rose."><figcaption><b>Exercises</b>Practise with questions and hints.</figcaption></figure></li>
+</ul>
 
 <h2>What it does</h2>
-<ul>
-  <li><strong>Compass</strong> from the phone's sensors, with a reading-quality indicator.</li>
-  <li><strong>Map AR</strong>: orient your paper map with the camera.</li>
-  <li><strong>Bearings</strong> between two points on a photo of the map.</li>
-  <li><strong>Academy</strong>: courses, lessons, quizzes and exercises.</li>
-  <li>Works offline. In Spanish and English.</li>
-</ul>
-<p class="muted">Orienta AR is a learning and practice tool, not a safety or emergency navigation device. Always carry a map and compass.</p>
+<div class="features">
+  <div class="feature"><h3>Compass</h3><p>From the phone's sensors, with a reading-quality indicator.</p></div>
+  <div class="feature"><h3>Map AR</h3><p>Orient your paper map with the camera.</p></div>
+  <div class="feature"><h3>Bearings</h3><p>Between two points on a photo of the map.</p></div>
+  <div class="feature"><h3>Academy</h3><p>Courses, lessons, quizzes and exercises.</p></div>
+</div>
+
+<p class="note">Orienta AR is a learning and practice tool, not a safety or emergency navigation device. Always carry a map and compass.</p>
 <!-- ad-slot: app-after-content (inactive; rules in docs/ADS.md) -->
 
 <h2>Documents</h2>

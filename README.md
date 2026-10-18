@@ -19,7 +19,7 @@ en/index.html            Home (English)
 assets/site.css          Shared styles (light/dark), the only stylesheet
 favicon.ico              Website icon (also assets/brand/)
 assets/brand/            Website icon PNGs and the nawqira Open Graph image
-assets/<appname>/        App images (icon-192.png, feature-es.png, feature-en.png)
+assets/<appname>/        App images (icon-192.png, feature-es.png, feature-en.png, shots/)
 <appname>/index.html     App page, Spanish       e.g. orientaar/
 en/<appname>/index.html  App page, English       e.g. en/orientaar/
 <appname>/privacy/       App privacy policy, bilingual ES + EN in one page (stable URL)
@@ -49,6 +49,24 @@ CNAME                    Custom domain for GitHub Pages (nawqira.com)
    source of truth; keep both in sync and update the effective date on every change).
 3. Add a card to `index.html` and `en/index.html`, and the pages to `sitemap.xml`.
 4. Commit and push; check `https://nawqira.com/<appname>/privacy/`.
+
+## App page standard (approved 2026-10-18)
+Every app page (`/<appname>/` and `/en/<appname>/`) uses the shared blocks in `assets/site.css`,
+in this order: `.app-hero` (icon 96 px, name, tagline = the Play short description, platform
+line) → `.facts` (true facts about this version only) → store-badge comment (Google Play badge
+only once published) → `.gallery` (screenshots) → `.features` → `.note` (safety/limits) →
+Documents. Per-app personality = two colours on `<body class="app-<appname>">`:
+`--app-accent` and `--app-accent-2` (light and dark values). No decorative motifs by default
+(contour lines were tried for Orienta AR and declined by the owner).
+- **Screenshots:** real screens from the app's store set (1080×2160, status bar removed), one
+  theme per set, ES and EN sets; no device mock-ups and no text baked in. Captions and alt
+  text are HTML. Served as JPEG (quality 86) at 360 and 540 px wide in
+  `assets/<appname>/shots/<lang>-<n>-<name>-<width>.jpg`, `srcset` + `loading="lazy"` +
+  `width`/`height`. Same order as on Google Play.
+- **Colours:** nawqira green `#1b5e20` / dark `#81c784` on cream `#fcfdf7` / dark `#151714`
+  (the app themes use the same values). System font stack; card radius 12 px, screenshot
+  radius 16 px, icon radius 22 %.
+- Never show third-party content without permission (e.g. a commercial paper map).
 
 ## Visual identity
 Website icon (owner choice 2026-10-18, proposal B): green "n" in a green ring on cream —

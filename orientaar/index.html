@@ -36,6 +36,7 @@
   "applicationCategory": "EducationalApplication",
   "inLanguage": ["es", "en"],
   "image": "https://nawqira.com/assets/orientaar/icon-192.png",
+  "screenshot": ["https://nawqira.com/assets/orientaar/shots/es-1-home-540.jpg", "https://nawqira.com/assets/orientaar/shots/es-2-compass-540.jpg", "https://nawqira.com/assets/orientaar/shots/es-3-academy-540.jpg", "https://nawqira.com/assets/orientaar/shots/es-4-exercise-540.jpg"],
   "featureList": ["Brújula con indicador de calidad de la lectura", "Mapa AR: orientar el mapa de papel con la cámara", "Rumbos entre dos puntos sobre una foto del mapa", "Academia: cursos, lecciones, cuestionarios y ejercicios", "Funciona sin Internet"],
   "publisher": {
     "@type": "Person",
@@ -47,7 +48,7 @@
 }
 </script>
 </head>
-<body>
+<body class="app-orientaar">
 <a class="skip-link" href="#main">Saltar al contenido</a>
 <header class="site-header"><div class="wrap">
   <a class="brand" href="/">nawqira</a>
@@ -58,23 +59,37 @@
 </div></header>
 
 <main id="main" class="wrap">
-<div class="app-head">
+<section class="app-hero">
   <img src="/assets/orientaar/icon-192.png" width="96" height="96" alt="">
   <div>
     <h1>Orienta AR</h1>
-    <p class="muted">App educativa de orientación deportiva para Android</p>
+    <p class="tagline">Aprende orientación: brújula, mapa con cámara, rumbos y academia.</p>
+    <p class="platform"><b>Android</b> · Español e inglés · Sin conexión</p>
   </div>
-</div>
+</section>
+
+<ul class="facts" aria-label="Características de esta versión">
+  <li>Funciona sin Internet</li><li>Sin cuentas</li><li>Sin publicidad invasiva</li><li>Sin analítica</li>
+</ul>
+<!-- store-badge: Google Play badge only once the app is published (follow Google's badge guidelines) -->
+
+<h2>Así es la app</h2>
+<ul class="gallery" tabindex="0" aria-label="Capturas de pantalla de Orienta AR (desplazable)">
+  <li><figure><img loading="lazy" src="/assets/orientaar/shots/es-1-home-360.jpg" srcset="/assets/orientaar/shots/es-1-home-360.jpg 360w, /assets/orientaar/shots/es-1-home-540.jpg 540w" sizes="(max-width: 640px) 62vw, 180px" width="360" height="720" alt="Pantalla de inicio con los cuatro modos: Brújula, Mapa AR, Rumbos y Academia."><figcaption><b>Cuatro modos</b>Brújula, Mapa AR, Rumbos y Academia.</figcaption></figure></li>
+  <li><figure><img loading="lazy" src="/assets/orientaar/shots/es-2-compass-360.jpg" srcset="/assets/orientaar/shots/es-2-compass-360.jpg 360w, /assets/orientaar/shots/es-2-compass-540.jpg 540w" sizes="(max-width: 640px) 62vw, 180px" width="360" height="720" alt="Brújula marcando 29° noreste con el indicador «Lectura estable»."><figcaption><b>Brújula</b>Con indicador de calidad: si la lectura no es fiable, lo dice.</figcaption></figure></li>
+  <li><figure><img loading="lazy" src="/assets/orientaar/shots/es-3-academy-360.jpg" srcset="/assets/orientaar/shots/es-3-academy-360.jpg 360w, /assets/orientaar/shots/es-3-academy-540.jpg 540w" sizes="(max-width: 640px) 62vw, 180px" width="360" height="720" alt="Lista de cursos de la Academia con su progreso."><figcaption><b>Academia</b>Seis cursos para aprender desde cero.</figcaption></figure></li>
+  <li><figure><img loading="lazy" src="/assets/orientaar/shots/es-4-exercise-360.jpg" srcset="/assets/orientaar/shots/es-4-exercise-360.jpg 360w, /assets/orientaar/shots/es-4-exercise-540.jpg 540w" sizes="(max-width: 640px) 62vw, 180px" width="360" height="720" alt="Ejercicio: elegir el punto cardinal que indica una flecha sobre la rosa de los vientos."><figcaption><b>Ejercicios</b>Practica con preguntas y pistas.</figcaption></figure></li>
+</ul>
 
 <h2>Qué hace</h2>
-<ul>
-  <li><strong>Brújula</strong> con los sensores del teléfono e indicador de calidad de la lectura.</li>
-  <li><strong>Mapa AR</strong>: orienta tu mapa de papel con la cámara.</li>
-  <li><strong>Rumbos</strong> entre dos puntos sobre una foto del mapa.</li>
-  <li><strong>Academia</strong>: cursos, lecciones, cuestionarios y ejercicios.</li>
-  <li>Funciona sin Internet. En español e inglés.</li>
-</ul>
-<p class="muted">Orienta AR es una herramienta de aprendizaje y práctica, no un instrumento de navegación de seguridad ni para emergencias. Lleva siempre mapa y brújula.</p>
+<div class="features">
+  <div class="feature"><h3>Brújula</h3><p>Con los sensores del teléfono e indicador de calidad de la lectura.</p></div>
+  <div class="feature"><h3>Mapa AR</h3><p>Orienta tu mapa de papel con la cámara.</p></div>
+  <div class="feature"><h3>Rumbos</h3><p>Entre dos puntos sobre una foto del mapa.</p></div>
+  <div class="feature"><h3>Academia</h3><p>Cursos, lecciones, cuestionarios y ejercicios.</p></div>
+</div>
+
+<p class="note">Orienta AR es una herramienta de aprendizaje y práctica, no un instrumento de navegación de seguridad ni para emergencias. Lleva siempre mapa y brújula.</p>
 <!-- ad-slot: app-after-content (inactive; rules in docs/ADS.md) -->
 
 <h2>Documentos</h2>
