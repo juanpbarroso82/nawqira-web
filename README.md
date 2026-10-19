@@ -67,6 +67,7 @@ Documents. Per-app personality = two colours on `<body class="app-<appname>">`:
   (the app themes use the same values). System font stack; card radius 12 px, screenshot
   radius 16 px, icon radius 22 %.
 - Never show third-party content without permission (e.g. a commercial paper map).
+  Permitted third-party content carries its credit on the image and in the caption.
 
 ## Visual identity
 Website icon (owner choice 2026-10-18, proposal B): green "n" in a green ring on cream —
@@ -100,3 +101,4 @@ store graphics (`assets/<appname>/`). Structured-data publisher = the privacy co
 - 2026-10-18: SEO + languages published (owner-approved): ES/EN pages with hreflang, descriptions, Open Graph, JSON-LD (publisher = privacy controller), robots.txt, sitemap.xml, website icon (proposal B), accessibility. Analytics prepared, not active; ads as invisible markers only. All URLs, assets, redirects and the 404 checked live. Search Console: owner verifying by DNS TXT; sitemap to submit after verification.
 - 2026-10-18: Search Console (owner): domain property nawqira.com verified via Cloudflare DNS TXT (keep that record); sitemap submitted, status Correct, 6 pages discovered; / indexed; /orientaar/ indexing requested. Initial SEO setup phase closed by the owner. Next: review Indexing → Pages and Performance after Google processes the site (EN pages included). No DNS, sitemap, analytics or ads changes without owner approval.
 - 2026-10-18: Orienta AR page redesigned (owner-approved): screenshot gallery (4 real screens per language, 360/540 px JPEG), facts, feature cards, safety note; reusable app-page blocks in site.css; standard in README. Checked live (pages, 16 screenshots, CSS).
+- 2026-10-19: Orienta AR ES page: Map AR and Bearings screenshots added (es-5-mapar, es-6-bearings; ES only, no EN captures yet). They show the Ediciones Desnivel map with the credit band on the image and «Mapa: © Ediciones Desnivel — La Pedriza del Manzanares 1:15.000» in the caption (`figcaption small`). Website use decided by the owner 2026-10-19 based on Desnivel's reply (OrientaAR `docs/THIRD_PARTY_PERMISSIONS.md`).
