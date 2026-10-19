@@ -13,7 +13,7 @@ structure, without a rewrite.
 
 ## Layout
 ```
-index.html               Home (Spanish): brand, app catalogue (one .card per app), contact
+index.html               Home (Spanish): brand, app catalogue (one .card.card-app per app, 64 px app icon on the left), contact
 en/index.html            Home (English)
 404.html                 Not-found page (noindex, not in the sitemap)
 assets/site.css          Shared styles (light/dark), the only stylesheet
@@ -102,3 +102,4 @@ store graphics (`assets/<appname>/`). Structured-data publisher = the privacy co
 - 2026-10-18: Search Console (owner): domain property nawqira.com verified via Cloudflare DNS TXT (keep that record); sitemap submitted, status Correct, 6 pages discovered; / indexed; /orientaar/ indexing requested. Initial SEO setup phase closed by the owner. Next: review Indexing → Pages and Performance after Google processes the site (EN pages included). No DNS, sitemap, analytics or ads changes without owner approval.
 - 2026-10-18: Orienta AR page redesigned (owner-approved): screenshot gallery (4 real screens per language, 360/540 px JPEG), facts, feature cards, safety note; reusable app-page blocks in site.css; standard in README. Checked live (pages, 16 screenshots, CSS).
 - 2026-10-19: Orienta AR ES page: Map AR and Bearings screenshots added (es-5-mapar, es-6-bearings; ES only, no EN captures yet). They show the Ediciones Desnivel map with the credit band on the image and «Mapa: © Ediciones Desnivel — La Pedriza del Manzanares 1:15.000» in the caption (`figcaption small`). Same day, owner request: gallery order Home, Compass, Map AR, Bearings, Academy, Exercises (file numbers keep the Play order); credit only on the image, removed from the captions. Website use decided by the owner 2026-10-19 based on Desnivel's reply (OrientaAR `docs/THIRD_PARTY_PERMISSIONS.md`).
+- 2026-10-19: Home ES/EN: app card shows the app icon (64 px, `icon-192.png`, decorative `alt=""`) left of the texts (`.card-app`, `.card-icon`), owner request.
