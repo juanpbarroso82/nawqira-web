@@ -30,7 +30,7 @@ docs/                    Internal notes (ADS.md, ANALYTICS.md); excluded in robo
 CNAME                    Custom domain for GitHub Pages (nawqira.com)
 .nojekyll                Serve files as-is
 ```
-**Stylesheet cache:** every page links `/assets/site.css?v=YYYYMMDD`; after any change to `site.css`, bump `v` in all pages (phones keep old CSS otherwise; seen on the Xiaomi browser 2026-10-22).
+**Stylesheet cache:** every page links `/assets/site.css?v=YYYYMMDD` (letter suffix for a second change the same day); after any change to `site.css`, bump `v` in all pages (phones keep old CSS otherwise; seen on the Xiaomi browser 2026-10-22).
 `<appname>` matches the last part of the app's applicationId (`com.nawqira.<appname>`).
 **Published URLs never change** (they are registered in Google Play).
 
@@ -113,3 +113,4 @@ store graphics (`assets/<appname>/`). Structured-data publisher = the privacy co
 - 2026-10-21: Orienta AR ES/EN pages: platform line and JSON-LD `inLanguage` now list the app's six languages (es, en, ca, eu, gl, fr); the website itself stays ES/EN. Requested by the owner.
 - 2026-10-21: Orienta AR EN page: Map AR and Bearings screenshots added (en-5-mapar, en-6-bearings; same order as ES, credit on the image only; owner decision). Facts: "Sin publicidad" / "No ads" instead of "Sin publicidad invasiva" / "No intrusive ads" (this version has no ads; owner decision).
 - 2026-10-22: A tu Paso privacy policy published at `/atupaso/privacy/` (ES + EN, effective 2026-10-22, app 0.9.9+; source of truth `aTuPaso/docs/PRIVACY.md`), added to `sitemap.xml`; owner request. The A tu Paso app page and home card come later (after the app's last TalkBack test).
+- 2026-10-22: A tu Paso app page published (owner-approved draft): `/atupaso/` + `/en/atupaso/` with the app-page standard. Gallery: 5 real screens per language (My lists, List, Step by step, Help me start, How it can help you; `assets/atupaso/shots/<lang>-<n>-<name>-{360,540}.jpg` from `aTuPaso/docs/store-assets/screenshots/`). Feature cards = the Google Play listing sections (titles unchanged, texts shortened or edited by the owner; "Accesible" left out by the owner; no `.note`, privacy is in the last card). Colours `.app-atupaso` (launcher greens); stylesheet bumped to `?v=20261022b`. Home cards now link the name and "Más información" / "More"; both pages added to `sitemap.xml`.

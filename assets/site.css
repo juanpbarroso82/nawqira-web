@@ -67,6 +67,8 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-
 :root { --app-accent: var(--accent); --app-accent-2: var(--accent); }
 .app-orientaar { --app-accent: #1b5e20; --app-accent-2: #e65100; }
 @media (prefers-color-scheme: dark) { .app-orientaar { --app-accent: #81c784; --app-accent-2: #ffb74d; } }
+.app-atupaso { --app-accent: #4d6b58; --app-accent-2: #34503c; }
+@media (prefers-color-scheme: dark) { .app-atupaso { --app-accent: #a9cbb2; --app-accent-2: #d3e6d6; } }
 
 .app-hero { display: grid; grid-template-columns: auto 1fr; gap: 20px; align-items: center; padding: 4px 0; }
 .app-hero img { width: 96px; height: 96px; border-radius: 22%; box-shadow: 0 1px 3px rgba(0,0,0,.18); }
