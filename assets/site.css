@@ -44,6 +44,9 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 40px 0; }
 .button { display: inline-block; background: var(--accent); color: var(--bg); font-weight: 600; text-decoration: none; padding: 10px 18px; border-radius: 999px; margin-right: 8px; }
 .button:hover { text-decoration: underline; }
 .links a { margin-right: 16px; }
+/* Social links: icon only (name in .visually-hidden), monochrome glyph in the text colour, 34 px tap area */
+.social { display: inline-flex; align-items: center; padding: 6px; margin-left: -6px; }
+.social svg { flex: none; color: var(--text); }
 
 .site-footer { border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
 .site-footer .wrap { padding-top: 16px; padding-bottom: 24px; }
