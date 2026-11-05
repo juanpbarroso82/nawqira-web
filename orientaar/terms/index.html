@@ -53,12 +53,12 @@
 <p>Esta versión es <strong>gratuita</strong>: no tiene compras dentro de la app, suscripciones ni publicidad, y no necesita una cuenta. Si en el futuro cambiáramos este modelo, por ejemplo con publicidad o con algún pago, definiremos sus condiciones y las comunicaremos antes de aplicarlas.</p>
 
 <h2>5. Referencias de norte y correcciones</h2>
-<p>El norte magnético (el de la brújula), el geográfico (el de los meridianos) y el de cuadrícula (el de las líneas de muchos mapas) son distintos, y la diferencia depende del lugar y de la fecha. Así los usa cada modo:</p>
+<p>El norte magnético (el de la brújula), el geográfico (el de los meridianos) y el de cuadrícula (el de las líneas de muchos mapas) son distintos. La diferencia entre el magnético y el geográfico es la declinación, que depende del lugar y de la fecha. La diferencia entre el geográfico y el de cuadrícula es la convergencia de cuadrícula, que depende de la posición y de la proyección del mapa. Así los usa cada modo:</p>
 <ul>
   <li><strong>Brújula:</strong> por defecto muestra el rumbo respecto al norte magnético. Si eliges el norte geográfico, aplica la declinación magnética. Si no hay declinación disponible, lo avisa y sigue mostrando el norte magnético.</li>
-  <li><strong>Mapa AR:</strong> tú indicas qué norte marcan las líneas de tu mapa; la app no lo supone. Para el norte geográfico necesita la declinación. Para el de cuadrícula necesita además la convergencia, que figura en el margen del mapa y que introduces tú. Sin esos datos, no muestra la guía.</li>
+  <li><strong>Mapa AR:</strong> tú indicas qué norte marcan las líneas de tu mapa; la app no lo supone. Para el norte geográfico necesita la declinación. Para el de cuadrícula necesita además la convergencia, que introduces tú (suele figurar en el margen del mapa). Sin esos datos, no muestra la guía.</li>
   <li><strong>Rumbos:</strong> mide el ángulo desde la línea de norte que marcas en la foto (no supone que el borde superior sea el norte) y lo expresa en el norte que has indicado para el mapa. Para seguir ese rumbo con la brújula, lo convierte al norte magnético con la declinación y, si el mapa usa el norte de cuadrícula, también con la convergencia. Si falta alguno de esos datos, no hace la conversión y te lo indica.</li>
-  <li><strong>Declinación:</strong> puedes escribirla tú (por ejemplo, la del margen del mapa) o calcularla con el modelo magnético mundial WMM2025, incluido en la app, a partir de una ubicación aproximada guardada. El modelo es válido hasta el <strong>31 de diciembre de 2029</strong>. Después, la app no lo extrapola: avisa de que hace falta una versión actualizada y te pide introducir la declinación a mano. Sin ubicación guardada, no calcula la declinación y puedes escribirla o usar solo el norte magnético. Cerca de los polos, el modelo puede no dar un valor.</li>
+  <li><strong>Declinación:</strong> puedes introducir tú una declinación correspondiente al lugar y a la fecha de uso, o calcularla con el modelo magnético mundial WMM2025, incluido en la app, a partir de una ubicación aproximada guardada. El modelo es válido hasta el <strong>31 de diciembre de 2029</strong>. Después, la app no lo extrapola: avisa de que hace falta una versión actualizada y te pide introducir la declinación a mano. Sin ubicación guardada, no calcula la declinación y puedes escribirla o usar solo el norte magnético. Cerca de los polos, el modelo puede no dar un valor.</li>
 </ul>
 
 <h2>6. Límites de las mediciones</h2>
@@ -91,9 +91,10 @@
 
 <h2>9. Uso permitido</h2>
 <p>Te damos permiso gratuito, no exclusivo e intransferible para instalar y usar Orienta AR en tus dispositivos con fines personales, educativos o de práctica deportiva. Esto incluye su uso por docentes, centros educativos y clubes en clases, entrenamientos y actividades.</p>
+<p>En esas clases y entrenamientos puedes mostrar la app y reproducir sus ejercicios (por ejemplo, proyectarlos o copiarlos en una hoja de trabajo), indicando que proceden de Orienta AR.</p>
 <p>Salvo en lo que permitan la ley o las licencias de código abierto del apartado 10, no está permitido:</p>
 <ul>
-  <li>copiar, vender o distribuir fuera de la app sus contenidos propios (lecciones, ejercicios, mapas de práctica y gráficos);</li>
+  <li>vender los contenidos propios de la app (lecciones, ejercicios, mapas de práctica y gráficos) o publicarlos como material independiente, separado de la app;</li>
   <li>distribuir copias modificadas de la app;</li>
   <li>usarla para fines ilegales.</li>
 </ul>
@@ -101,7 +102,7 @@
 <h2>10. Propiedad intelectual y componentes de terceros</h2>
 <ul>
   <li>El código propio de la app, sus textos, lecciones, ejercicios, mapas de práctica y gráficos son de Juan Pedro Barroso. Esto no incluye los componentes de terceros que se indican a continuación.</li>
-  <li><strong>Código abierto:</strong> la app incluye bibliotecas de Kotlin y AndroidX (entre ellas Jetpack Compose, Material 3, CameraX, Navigation, DataStore y AppCompat), los iconos Material Icons y otras bibliotecas de las que dependen, como Guava y Dagger. Todas tienen licencia Apache 2.0. Sus autores conservan sus derechos, se aplican sus licencias y estos términos no las restringen. En la app, «Acerca de → Licencias de código abierto y atribuciones» muestra la lista principal y el texto de la licencia Apache 2.0.</li>
+  <li><strong>Código abierto:</strong> la app incluye bibliotecas de Kotlin y AndroidX (entre ellas Jetpack Compose, Material 3, CameraX, Navigation, DataStore y AppCompat), los iconos Material Icons y otras bibliotecas de las que dependen, como Guava y Dagger. La mayoría tienen licencia Apache 2.0. Protocol Buffers, incluido en DataStore, tiene licencia BSD de 3 cláusulas, y CameraX Core declara las licencias Apache 2.0 y BSD de 3 cláusulas. Sus autores conservan sus derechos, se aplican sus licencias y estos términos no las restringen. En la app, «Acerca de → Licencias de código abierto y atribuciones» muestra la lista principal y el texto de la licencia Apache 2.0.</li>
   <li><strong>Modelo magnético:</strong> la app calcula la declinación con código propio a partir de los coeficientes oficiales del World Magnetic Model WMM2025. El modelo lo han desarrollado NOAA NCEI (EE. UU.) y el British Geological Survey (Reino Unido), y NOAA indica que su información y su software pueden usarse libremente.</li>
   <li><strong>Tus mapas:</strong> los mapas que usas con la app son de sus autores o editores. La app solo los procesa de forma temporal en tu teléfono.</li>
 </ul>
@@ -177,12 +178,12 @@
 <p>This version is <strong>free</strong>: it has no in-app purchases, subscriptions or ads, and needs no account. If we change this model in the future, for example with ads or some kind of payment, we will set out the conditions and announce them before they apply.</p>
 
 <h2>5. North references and corrections</h2>
-<p>Magnetic north (the compass's), true north (the meridians') and grid north (the lines on many maps) are different, and the difference depends on place and date. This is how each mode uses them:</p>
+<p>Magnetic north (the compass's), true north (the meridians') and grid north (the lines on many maps) are different. The difference between magnetic and true north is the declination, which depends on place and date. The difference between true and grid north is the grid convergence, which depends on the position and on the map's projection. This is how each mode uses them:</p>
 <ul>
   <li><strong>Compass:</strong> by default it shows the heading relative to magnetic north. If you choose true north, it applies the magnetic declination. If no declination is available, it says so and keeps showing magnetic north.</li>
-  <li><strong>Map AR:</strong> you state which north your map's lines show; the app does not assume it. For true north it needs the declination. For grid north it also needs the convergence, which is printed in the map margin and which you enter. Without that data, it does not show the guide.</li>
+  <li><strong>Map AR:</strong> you state which north your map's lines show; the app does not assume it. For true north it needs the declination. For grid north it also needs the convergence, which you enter (it is usually printed in the map margin). Without that data, it does not show the guide.</li>
   <li><strong>Bearings:</strong> it measures the angle from the north line you mark on the photo (it does not assume the top edge is north) and gives it in the north you stated for the map. To follow that bearing with the compass, it converts it to magnetic north using the declination and, if the map uses grid north, the convergence as well. If any of that data is missing, it does not convert and tells you so.</li>
-  <li><strong>Declination:</strong> you can type it in (for example, the value in the map margin) or have it calculated with the World Magnetic Model WMM2025, built into the app, from a saved approximate location. The model is valid until <strong>31 December 2029</strong>. After that, the app does not extrapolate: it says an updated version is needed and asks you to enter the declination by hand. With no saved location, it does not calculate the declination, and you can type it in or use magnetic north only. Near the poles, the model may give no value.</li>
+  <li><strong>Declination:</strong> you can enter a declination that matches the place and date of use, or have it calculated with the World Magnetic Model WMM2025, built into the app, from a saved approximate location. The model is valid until <strong>31 December 2029</strong>. After that, the app does not extrapolate: it says an updated version is needed and asks you to enter the declination by hand. With no saved location, it does not calculate the declination, and you can type it in or use magnetic north only. Near the poles, the model may give no value.</li>
 </ul>
 
 <h2>6. Limits of the measurements</h2>
@@ -215,9 +216,10 @@
 
 <h2>9. Permitted use</h2>
 <p>We give you a free, non-exclusive and non-transferable permission to install and use Orienta AR on your devices for personal, educational or sports-practice purposes. This includes use by teachers, schools and clubs in lessons, training sessions and activities.</p>
+<p>In those lessons and training sessions you may show the app and reproduce its exercises (for example, project them or copy them onto a worksheet), stating that they come from Orienta AR.</p>
 <p>Except where the law or the open-source licences in section 10 allow it, you may not:</p>
 <ul>
-  <li>copy, sell or distribute the app's own content (lessons, exercises, practice maps and graphics) outside the app;</li>
+  <li>sell the app's own content (lessons, exercises, practice maps and graphics) or publish it as standalone material, separate from the app;</li>
   <li>distribute modified copies of the app;</li>
   <li>use it for unlawful purposes.</li>
 </ul>
@@ -225,7 +227,7 @@
 <h2>10. Intellectual property and third-party components</h2>
 <ul>
   <li>The app's own code, texts, lessons, exercises, practice maps and graphics belong to Juan Pedro Barroso. This does not include the third-party components listed below.</li>
-  <li><strong>Open source:</strong> the app includes Kotlin and AndroidX libraries (among them Jetpack Compose, Material 3, CameraX, Navigation, DataStore and AppCompat), the Material Icons and other libraries they depend on, such as Guava and Dagger. They are all under the Apache 2.0 licence. Their authors keep their rights, their licences apply, and these terms do not restrict them. In the app, "About → Open-source licences and credits" shows the main list and the text of the Apache 2.0 licence.</li>
+  <li><strong>Open source:</strong> the app includes Kotlin and AndroidX libraries (among them Jetpack Compose, Material 3, CameraX, Navigation, DataStore and AppCompat), the Material Icons and other libraries they depend on, such as Guava and Dagger. Most are under the Apache 2.0 licence. Protocol Buffers, included in DataStore, is under the 3-clause BSD licence, and CameraX Core declares both the Apache 2.0 and the 3-clause BSD licences. Their authors keep their rights, their licences apply, and these terms do not restrict them. In the app, "About → Open-source licences and credits" shows the main list and the text of the Apache 2.0 licence.</li>
   <li><strong>Magnetic model:</strong> the app calculates the declination with its own code from the official coefficients of the World Magnetic Model WMM2025. The model is developed by NOAA NCEI (US) and the British Geological Survey (UK), and NOAA states that its information and software may be used freely.</li>
   <li><strong>Your maps:</strong> the maps you use with the app belong to their authors or publishers. The app only processes them temporarily on your phone.</li>
 </ul>
